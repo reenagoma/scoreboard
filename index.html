@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    <body>
+        <h1 id="title">COUP DE ESCRIVA</h1>
+        <div id="scores">
+            <div class="home">
+                <h2 id="firstName">TEAM 1</h2>
+                <p class="pts" id="Mpts">0</p>
+                <button onclick="add1M()">1</button>
+                <button onclick="add2M()">2</button>
+                <button onclick="add3M()">3</button>
+            </div>
+            <div class="away">
+                <h2 id="secondName">TEAM 2</h2>
+                <p class="pts" id="Tpts">0</p>
+                <button onclick="add1T()">1</button>
+                <button onclick="add2T()">2</button>
+                <button onclick="add3T()">3</button>
+            </div>
+        </div>
+        <div id="inputs">
+            <input type="text" id="team1" placeholder="INPUT TEAM 1" onclick="this.value = '' "/>
+            <input type="text" id="team2" placeholder="INPUT TEAM 2"  />
+        </div>
+        <button onclick="enter()">ENTER</button>
+        <script src="index.js"></script>
+    </body>
+</html>
